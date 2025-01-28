@@ -1,1 +1,2 @@
-# odin-rock-paper-scissors
+# The Odin Project - Foundations: Rock Paper Scissors
+A Rock Paper Scissors game created during The Odin Project Foundations course using plain Javascript. The given task was to use the prompt method to take user inputs and the console.log() method to display messages to the user. The HTML file is blank, only being used to run the script.js.
