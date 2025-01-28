@@ -21,6 +21,30 @@ function getHumanChoice(){
             return "Scissors";
         break;
         default:
-            return "Invalid Option";
+            return "Invalid option";
     }
 }
+
+function playRound(humanChoice,computerChoice){
+    if (humanChoice == "Invalid option"){
+        console.log("Invalid option. Please try again!");
+        return;
+    }
+    console.log(`You chose: ${humanChoice}`);
+    console.log(`The computer chose: ${computerChoice}`);
+    if (humanChoice == computerChoice){
+        console.log("It's a tie!");
+    }
+    if((humanChoice == "Rock" && computerChoice == "Scissors") || (humanChoice == "Paper" && computerChoice == "Rock") || (humanChoice == "Scissors" && computerChoice == "Paper")){
+        console.log("You win!")
+        humanScore++;
+    }else{
+        console.log("You lose!")
+        computerScore++;
+    }
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection,computerSelection);
