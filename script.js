@@ -1,4 +1,6 @@
 choices = ["Rock","Paper","Scissors"];
+humanScore = 0;
+computerScore = 0;
 
 function getComputerChoice(){
     randomIndex = Math.floor(Math.random()*3);
